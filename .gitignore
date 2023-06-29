@@ -1,0 +1,21 @@
+# Blaze Go-Lang
+BlazeGo/*.zip
+
+# Blaze C
+BlazeLang/x64
+BlazeLang/.vs
+BlazeLang/Blaze/x64
+
+# LimeLang Python
+LimeLang/.idea
+LimeLang/__pycache__
+LimeLang/*.exe
+LimeLang/*.spec
+LimeLang/dist
+
+# LoxSharp C#
+LoxSharp/.vs
+LoxSharp/LoxSharp/bin
+LoxSharp/LoxSharp/obj
+LoxSharp/LoxSharpTooling/bin
+LoxSharp/LoxSharpTooling/obj
