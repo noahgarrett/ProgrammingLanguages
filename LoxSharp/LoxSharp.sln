@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33502.453
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoxSharp", "LoxSharp\LoxSharp.csproj", "{253081A8-92A6-4480-9796-DBEF4C297D81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoxSharpTooling", "LoxSharpTooling\LoxSharpTooling.csproj", "{C40978B3-9EF1-4247-AF6A-063562B0C506}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{253081A8-92A6-4480-9796-DBEF4C297D81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{253081A8-92A6-4480-9796-DBEF4C297D81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{253081A8-92A6-4480-9796-DBEF4C297D81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{253081A8-92A6-4480-9796-DBEF4C297D81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C40978B3-9EF1-4247-AF6A-063562B0C506}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C40978B3-9EF1-4247-AF6A-063562B0C506}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C40978B3-9EF1-4247-AF6A-063562B0C506}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C40978B3-9EF1-4247-AF6A-063562B0C506}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5ACA8A9C-90F0-42A6-9240-08E4F96335F2}
+	EndGlobalSection
+EndGlobal
