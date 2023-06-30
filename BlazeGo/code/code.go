@@ -51,6 +51,17 @@ type Opcode byte
 const (
 	OpConstant Opcode = iota
 	OpAdd             // Adds two constants together from the stack
+	OpPop             // Pops the last value stored on the stack
+	OpSub
+	OpMul
+	OpDiv
+	OpTrue
+	OpFalse
+	OpEqual
+	OpNotEqual
+	OpGreaterThan
+	OpMinus
+	OpBang
 )
 
 type Definition struct {
@@ -59,8 +70,19 @@ type Definition struct {
 }
 
 var definitions = map[Opcode]*Definition{
-	OpConstant: {"OpConstant", []int{2}}, // Says its only operand is two bytes wide (allow up to 65,535 constants to be stored)
-	OpAdd:      {"OpAdd", []int{}},       // Blank int array signifies this OpCode has zero operands
+	OpConstant:    {"OpConstant", []int{2}}, // Says its only operand is two bytes wide (allow up to 65,535 constants to be stored)
+	OpAdd:         {"OpAdd", []int{}},       // Blank int array signifies this OpCode has zero operands
+	OpPop:         {"OpPop", []int{}},
+	OpSub:         {"OpSub", []int{}},
+	OpMul:         {"OpMul", []int{}},
+	OpDiv:         {"OpDiv", []int{}},
+	OpTrue:        {"OpTrue", []int{}},
+	OpFalse:       {"OpFalse", []int{}},
+	OpEqual:       {"OpEqual", []int{}},
+	OpNotEqual:    {"OpNotEqual", []int{}},
+	OpGreaterThan: {"OpGreaterThan", []int{}},
+	OpMinus:       {"OpMinus", []int{}},
+	OpBang:        {"OpBang", []int{}},
 }
 
 // Looks up the definition of a given OpCode
