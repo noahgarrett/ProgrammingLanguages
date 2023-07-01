@@ -67,6 +67,9 @@ const (
 	OpNull
 	OpGetGlobal
 	OpSetGlobal
+	OpArray
+	OpHash
+	OpIndex
 )
 
 type Definition struct {
@@ -93,6 +96,9 @@ var definitions = map[Opcode]*Definition{
 	OpNull:          {"OpNull", []int{}},
 	OpGetGlobal:     {"OpGetGlobal", []int{2}},
 	OpSetGlobal:     {"OpSetGlobal", []int{2}},
+	OpArray:         {"OpArray", []int{2}}, // Operand specifys how many elements are in the array / on the stack
+	OpHash:          {"OpHash", []int{2}},  // Operand specifys the number of keys AND values sitting on the stack
+	OpIndex:         {"OpIndex", []int{}},
 }
 
 // Looks up the definition of a given OpCode

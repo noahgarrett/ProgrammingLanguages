@@ -13,7 +13,7 @@ import (
 	"os/user"
 )
 
-const USE_REPL = true
+const USE_REPL = false
 
 func main() {
 	user, err := user.Current()
