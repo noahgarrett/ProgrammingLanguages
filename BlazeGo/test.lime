@@ -1,13 +1,13 @@
-let globalSeed = 50;
+let globalNum = 10;
 
-let minusOne = fn() {
-    let num = 1;
-    globalSeed - num;
+let sum = fn(a, b) {
+    let c = a + b;
+    c + globalNum;
 };
 
-let minusTwo = fn() {
-    let num = 2;
-    globalSeed - num;
+let outer = fn() {
+    sum(1, 2) + sum(3, 4) + globalNum;
 };
 
-minusOne() + minusTwo();
+outer() + globalNum;
+
